@@ -1,4 +1,7 @@
-require('dotenv').config();
+// index.js o app.js
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+}
 
 // Import Express.js
 const express = require('express');
